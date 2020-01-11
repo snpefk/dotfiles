@@ -1,0 +1,35 @@
+#! /bin/sh
+
+sxhkd &
+
+xrandr --output eDP-1 --off
+xrandr --output HDMI-2 --mode 2560x1440 
+
+bspc monitor HDMI-2 -d 1 2 3 4 5 6 7 8 9 10
+
+bspc config border_width         1 
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config top_padding		 0
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a firefox desktop='^1'
+bspc rule -a mplayer2 state=floating
+bspc rult -a Telegram desktop='^4' state=monocle
+
+monitor.sh
+compton -b
+# background 
+# feh --bg-fill ~/Pictures/wallpaper/wallhaven-558516.jpg
+$HOME/.fehbg
+
+# polybar launch 
+$HOME/.config/polybar/launch.sh
+
+# autostart
+redshift &
+dropbox start
+Telegram -startintray
