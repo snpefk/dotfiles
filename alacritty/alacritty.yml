@@ -18,7 +18,7 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 0
+    columns: 100
     lines: 0
 
   # Window position (changes require restart)
@@ -96,11 +96,11 @@ scrolling:
 # Some applications, like Emacs, rely on knowing about the width of a tab.
 # To prevent unexpected behavior in these applications, it's also required to
 # change the `it` value in terminfo when altering this setting.
-tabspaces: 8
+tabspaces: 4
 
 # Font configuration (changes require restart)
 font:
-  size: 10.0 
+  size: 11.0 
   # Normal (roman) font face
   normal:
     # Font family
