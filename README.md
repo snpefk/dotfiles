@@ -5,7 +5,7 @@ try to guess
 - [eva](https://github.com/NerdyPepper/eva) - calculator 
 - [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
-- [tldr](https://github.com/bootandy/dust) - man pages with example
+- [tldr](https://github.com/dbrgn/tealdeer) - man pages with example
 - [dust](https://github.com/bootandy/dust) - fancy `du`
 - [hexyl](https://github.com/sharkdp/hexyl) - hex viewer
 - [procs](https://github.com/dalance/procs) - replacement for `ps`
