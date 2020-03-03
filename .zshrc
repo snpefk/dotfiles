@@ -1,5 +1,3 @@
-PATH=~/opt:~/code/depot_tools:$PATH
-
 export ZSH="/home/snpefk/.oh-my-zsh"
 
 ZSH_THEME=""
