@@ -13,3 +13,4 @@ try to guess
 - [fd](https://github.com/sharkdp/fd) - simple, fast and user-friendly alternative to `find`
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
 - [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
+- [nvim](https://github.com/neovim/neovim) - vim fork 
