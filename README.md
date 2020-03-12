@@ -12,3 +12,4 @@ try to guess
 - [bat](https://github.com/sharkdp/bat) - cat(1) clone with syntax highlighting and Git integration
 - [fd](https://github.com/sharkdp/fd) - simple, fast and user-friendly alternative to `find`
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
+- [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
