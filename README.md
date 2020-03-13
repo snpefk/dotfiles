@@ -18,3 +18,4 @@ try to guess
 - 🦀 [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
 - [nvim](https://github.com/neovim/neovim) - vim fork 
 - 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool 
+- 🦀 [genact](https://github.com/svenstaro/genact) - a nonsense activity generator
