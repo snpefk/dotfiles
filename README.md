@@ -1,6 +1,9 @@
 # dotfiles
 try to guess
 
+## Screenshot
+![screenshot](https://raw.githubusercontent.com/snpefk/dotfiles/master/screenshot.png)
+
 ## CLI software 
 - 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
 - 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
