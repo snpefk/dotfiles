@@ -2,7 +2,7 @@
 try to guess
 
 ## CLI software 
-- 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
+- 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator https://img.shields.io/badge/language-rust-%23dea584
 - 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
 - 🦀 [dust](https://github.com/bootandy/dust) - fancy `du`
@@ -14,3 +14,4 @@ try to guess
 - 🦀 [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
 - 🦀 [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
 - [nvim](https://github.com/neovim/neovim) - vim fork 
+- 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool 
