@@ -9,6 +9,7 @@ plugins=(
   pip
   virtualenvwrapper
   rust
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
