@@ -1,0 +1,15 @@
+- defaults:
+    link: 
+        relink: true 
+- create:
+    - ~/code
+
+- link:
+    ~/code/dotefiles: ''
+    ~/.config/alacritty: alacritty
+    ~/.config/bspwm: bspwmrc
+    ~/.config/lf: lf 
+    ~/.config/polybar: polybar
+    ~/.config/sxhkd: sxhkd
+    ~/.config/nvim: vim
+    ~/.zshrc: 
