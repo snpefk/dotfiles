@@ -9,6 +9,7 @@ plugins=(
   pip
   virtualenvwrapper
   rust
+  docker
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -29,7 +30,8 @@ fi
 
 # aliases
 alias copy='xclip -selection clipboard'
-alias ls='exa --group-directories-first --icons -lh'
+alias ls='exa --group-directories-first --icons -l'
+alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd )' 
 
