@@ -1,6 +1,7 @@
 - defaults:
-    link: 
-        relink: true 
+    link:
+      relink: true
+
 - create:
     - ~/code
 
@@ -8,8 +9,11 @@
     ~/code/dotefiles: ''
     ~/.config/alacritty: alacritty
     ~/.config/bspwm: bspwm
-    ~/.config/lf: lf 
+    ~/.config/lf: lf
     ~/.config/polybar: polybar
     ~/.config/sxhkd: sxhkd
     ~/.config/nvim: vim
     ~/.zshrc: 
+
+- shell:
+  - git submodule sync --recursive
