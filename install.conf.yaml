@@ -7,7 +7,7 @@
 - link:
     ~/code/dotefiles: ''
     ~/.config/alacritty: alacritty
-    ~/.config/bspwm: bspwmrc
+    ~/.config/bspwm: bspwm
     ~/.config/lf: lf 
     ~/.config/polybar: polybar
     ~/.config/sxhkd: sxhkd
