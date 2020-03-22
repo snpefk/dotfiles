@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('/home/snpefk/.local/share/nvim/plugged')
 
 Plug 'nightsense/seabird'
 Plug 'udalov/kotlin-vim'
@@ -7,7 +7,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'lambdalisue/vim-gista'
 Plug 'majutsushi/tagbar'
 Plug 'universal-ctags/ctags'
-Plug 'rodjek/vim-puppet'
 
 call plug#end()
 "==============================================
@@ -26,3 +25,5 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 set number
 
 nmap <F8> :TagbarToggle<CR>
+set tabstop=4
+set shiftwidth=4
