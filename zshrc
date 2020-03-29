@@ -1,4 +1,6 @@
 export ZSH="/home/snpefk/.oh-my-zsh"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
+export ANDROID_SDK_ROOT="~/Android/Sdk"
 
 ZSH_THEME=""
 ENABLE_CORRECTION="true"
@@ -33,6 +35,6 @@ alias copy='xclip -selection clipboard'
 alias ls='exa --group-directories-first --icons -l'
 alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
-alias dup='alacritty --working-directory $( pwd )' 
+alias dup='alacritty --working-directory $( pwd ) &' 
 
 eval "$(zoxide init zsh)"
