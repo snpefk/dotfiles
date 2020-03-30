@@ -6,7 +6,7 @@
     - ~/code
 
 - link:
-    ~/code/dotefiles: ''
+    ~/code/dotfiles: ''
     ~/.config/alacritty: alacritty
     ~/.config/bspwm: bspwm
     ~/.config/lf: lf
