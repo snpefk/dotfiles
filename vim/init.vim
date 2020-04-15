@@ -7,6 +7,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'lambdalisue/vim-gista'
 Plug 'majutsushi/tagbar'
 Plug 'universal-ctags/ctags'
+Plug 'dhruvasagar/vim-table-mode'
 
 call plug#end()
 "==============================================
