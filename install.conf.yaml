@@ -11,6 +11,7 @@
     ~/.config/bspwm: bspwm
     ~/.config/lf: lf
     ~/.config/polybar: polybar
+    ~/.config/mpv: mpv
     ~/.config/sxhkd: sxhkd
     ~/.config/nvim: vim
     ~/.zshrc: 
