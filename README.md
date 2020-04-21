@@ -19,3 +19,4 @@ try to guess
 - [nvim](https://github.com/neovim/neovim) - vim fork 
 - 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool 
 - 🦀 [genact](https://github.com/svenstaro/genact) - a nonsense activity generator
+- [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
