@@ -8,6 +8,7 @@ Plug 'lambdalisue/vim-gista'
 Plug 'majutsushi/tagbar'
 Plug 'universal-ctags/ctags'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
 "==============================================
