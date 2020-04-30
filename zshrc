@@ -41,9 +41,3 @@ alias dup='alacritty --working-directory $( pwd ) &'
 eval "$(zoxide init zsh)"
 source <(kubectl completion zsh) 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/snpefk/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/snpefk/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/snpefk/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/snpefk/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
