@@ -1,5 +1,9 @@
 export LF_ICONS="\
 di=:\
+tw=:\
+st=:\
+ow=:\
+dt=:\
 fi=:\
 ln=:\
 or=:\
@@ -154,5 +158,6 @@ ex=:\
 *.spx=:\
 *.xspf=:\
 *.pdf=:\
+*.epub=:\
 *.nix=:\
 "
