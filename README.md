@@ -1,8 +1,8 @@
 # dotfiles
-try to guess
-
-## Screenshot
 ![screenshot](https://raw.githubusercontent.com/snpefk/dotfiles/master/screenshot.png)
+
+## Scripts
+Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ## CLI software 
 - 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
