@@ -1,3 +1,7 @@
+# Small contraption that translate selected text. Glued together with translate 
+# shell (https://github.com/soimort/translate-shell), xclip and notify-send. 
+# Without a doubt my best (and most useful) invention.
+
 #!/usr/bin/env zsh
 SELECTED=$( xclip -o ) 
 TRANSLATED=$( trans :ru -show-original n -show-translation-phonetics n -show-languages n -show-dictionary n -show-translation n -show-prompt-message n -no-ansi -indent 0 $SELECTED | tail -n 1 )
