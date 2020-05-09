@@ -38,6 +38,15 @@ alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 
+# fast navigation through zoxide
 eval "$(zoxide init zsh)"
+
+# kubernates autocomplete
 source <(kubectl completion zsh) 
+
+# fzf 
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
