@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+URI=file://$(shuf -n1 -e ~/Pictures/wallpaper/*)
+echo $URI
+gsettings set org.gnome.desktop.background picture-uri "$URI" 
