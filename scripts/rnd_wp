@@ -1,3 +1,4 @@
+# Set random wallpaper from specified foler
 #!/usr/bin/env sh
 URI=file://$(shuf -n1 -e ~/Pictures/wallpaper/*)
 echo $URI
