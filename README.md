@@ -20,3 +20,5 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool 
 - 🦀 [genact](https://github.com/svenstaro/genact) - a nonsense activity generator
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
+- [fzf](https://github.com/junegunn/fzf) - fuzzy-finder (personal must have!)
+- [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
