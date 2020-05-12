@@ -24,3 +24,4 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
 - [gh](https://github.com/cli/cli) - github cli tool 
 - 🦀 [ytop](https://github.com/cjbassi/ytop/) - system monitor 
+- 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output 
