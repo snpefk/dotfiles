@@ -7,4 +7,4 @@ SELECTED=$( xclip -o )
 TRANSLATED=$( trans :ru -show-original n -show-translation-phonetics n -show-languages n -show-dictionary n -show-translation n -show-prompt-message n -no-ansi -indent 0 $SELECTED | tail -n 1 )
 notify-send $TRANSLATED
 BRIEF=$( cut -d "," -f1 <<< "$TRANSLATED" )
-echo "$SELECTED,$BRIEF" >> ~/Documents/anki.csv
+echo "$SELECTED,$BRIEF" >> ~/docs/anki.csv
