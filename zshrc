@@ -1,6 +1,6 @@
 export ZSH="/home/snpefk/.oh-my-zsh"
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
-export ANDROID_SDK_ROOT="~/.android/sdk"
+export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export GROOVY_HOME="/usr/share/groovy/"
 
 ZSH_THEME=""
