@@ -4,7 +4,7 @@
 ## Scripts
 Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
-## CLI software 
+## CLI
 - 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
 - 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
@@ -22,6 +22,9 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
 - [fzf](https://github.com/junegunn/fzf) - fuzzy-finder (personal must have!)
 - [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
-- [gh](https://github.com/cli/cli) - github cli tool 
-- 🦀 [ytop](https://github.com/cjbassi/ytop/) - system monitor 
+- [gh](https://github.com/cli/cli) - github cli tool
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output 
+
+### monitoring
+- 🦀 [ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
+- [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
