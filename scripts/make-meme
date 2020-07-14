@@ -14,6 +14,6 @@ top=${3:-' '}
 
 magick convert $origin \
 	-font impact -fill white -pointsize 84 -stroke black -strokewidth 3 \
-	-gravity north -annotate +0+20 $top \
-	-gravity south -annotate +0+20 $bottom \
+	-gravity north -annotate +0+20 "$top" \
+	-gravity south -annotate +0+20 "$bottom" \
 	$output
