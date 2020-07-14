@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/sh
 
 # Make meme with bottom and (optional) top text from cli.
 # First arg for original file, second for bottom text and third (optional) 
@@ -12,4 +12,8 @@ output="$name-meme.$ext"
 bottom=$2
 top=${3:-' '}
 
-convert $origin -font impact -fill white -pointsize 84 -stroke black -strokewidth 3 -gravity north -annotate +0+20 $top -gravity south -annotate +0+20 $bottom $output
+magick convert $origin \
+	-font impact -fill white -pointsize 84 -stroke black -strokewidth 3 \
+	-gravity north -annotate +0+20 $top \
+	-gravity south -annotate +0+20 $bottom \
+	$output
