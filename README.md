@@ -23,7 +23,8 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [fzf](https://github.com/junegunn/fzf) - fuzzy-finder (personal must have!)
 - [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
 - [gh](https://github.com/cli/cli) - github cli tool
-- 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output 
+- 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
+- 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit 
 
 ### monitoring
 - 🦀 [ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
