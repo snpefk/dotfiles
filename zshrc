@@ -39,6 +39,7 @@ alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 alias glow='glow -p'
+alias open='xdg-open'
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
