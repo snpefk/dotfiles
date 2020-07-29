@@ -23,7 +23,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
 - [gh](https://github.com/cli/cli) - github cli tool
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
-
+- 🦀 [sd](https://github.com/chmln/sd) - sed alternative
 
 ### csv & spreadsheet
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
