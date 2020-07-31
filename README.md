@@ -29,6 +29,9 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
 
+### docker 
+- [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
+
 ### monitoring
 - 🦀 [ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
