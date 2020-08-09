@@ -24,6 +24,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [gh](https://github.com/cli/cli) - github cli tool
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
 - 🦀 [sd](https://github.com/chmln/sd) - sed alternative
+- [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances 
 
 ### csv & spreadsheet
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
