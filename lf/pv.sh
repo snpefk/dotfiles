@@ -18,5 +18,9 @@ case "$1" in
 	*.doc) catdoc "$1" ;;
 	*.docx) docx2txt "$1" - ;;
 	*.csv) cat "$1" | sed s/,/\\n/g ;;
-    *) bat --color=always --theme=base16 --style=changes "$1";;
+    *)
+		if isutf8 "$1"
+		then bat --color=always --theme=base16 --style=changes "$1"
+		else hexyl --border none "$1"
+		fi ;;
 esac
