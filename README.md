@@ -37,3 +37,4 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 ### monitoring
 - 🦀 [ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
+- [sampler](https://github.com/sqshq/sampler) - Tool for shell commands execution, visualization and alerting. Configured with a simple YAML file. 
