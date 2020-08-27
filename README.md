@@ -29,7 +29,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 ### csv & spreadsheet
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
-- [VisiData](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data 
+- [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data 
 
 ### docker 
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
