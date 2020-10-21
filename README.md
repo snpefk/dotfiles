@@ -27,7 +27,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [gh](https://github.com/cli/cli) - github cli tool
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
 - 🦀 [sd](https://github.com/chmln/sd) - sed alternative
-- [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances 
+- [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
 
 ### csv & spreadsheet
 
@@ -45,9 +45,12 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
 - [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
 
+### binary analys
+
+- [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more.
+ 
 ## Non-CLI
 
 ### Binary analysis
 
-- [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more. 
 - [Veles](https://github.com/codilime/veles) - visualize binary as cube (and hex viewer)
