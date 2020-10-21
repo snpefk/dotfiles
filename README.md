@@ -1,10 +1,13 @@
 # dotfiles
+
 ![screenshot](https://raw.githubusercontent.com/snpefk/dotfiles/master/screenshot.png)
 
 ## Scripts
+
 Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ## CLI
+
 - 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
 - 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
@@ -17,7 +20,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
 - 🦀 [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
 - [nvim](https://github.com/neovim/neovim) - vim fork 
-- 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool 
+- 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool
 - 🦀 [genact](https://github.com/svenstaro/genact) - a nonsense activity generator
 - [fzf](https://github.com/junegunn/fzf) - fuzzy-finder (personal must have!)
 - [glow](https://github.com/charmbracelet/glow) - pretty markdown viewer
@@ -27,14 +30,24 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances 
 
 ### csv & spreadsheet
+
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
 - [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data 
 
-### docker 
+### docker
+
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
 
 ### monitoring
+
 - 🦀 [ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
-- [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file. 
+- [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
+
+## Non-CLI
+
+### Binary analysis
+
+- [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more. 
+- [Veles](https://github.com/codilime/veles) - visualize binary as cube (and hex viewer)
