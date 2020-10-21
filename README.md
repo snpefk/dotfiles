@@ -8,7 +8,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ## CLI
 
-- 🦀 [eva](https://github.com/NerdyPepper/eva) - calculator 
+- ~~🦀 [eva](https://github.com/NerdyPepper/eva) - calculator~~
 - 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
 - 🦀 [dust](https://github.com/bootandy/dust) - fancy `du`
@@ -33,7 +33,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
-- [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data 
+- [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data
 
 ### docker
 
