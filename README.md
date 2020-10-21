@@ -51,6 +51,6 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ## Non-CLI
 
-### Binary analysis
+### binary analysis
 
 - [Veles](https://github.com/codilime/veles) - visualize binary as cube (and hex viewer)
