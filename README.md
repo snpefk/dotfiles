@@ -19,7 +19,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [fd](https://github.com/sharkdp/fd) - simple, fast and user-friendly alternative to `find`
 - 🦀 [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
 - 🦀 [tokei](https://github.com/XAMPPRocky/tokei) - faster `cloc` alternative
-- [nvim](https://github.com/neovim/neovim) - vim fork 
+- [nvim](https://github.com/neovim/neovim) - vim fork
 - 🦀 [hyperfine](https://github.com/sharkdp/hyperfine) - benchmark tool
 - 🦀 [genact](https://github.com/svenstaro/genact) - a nonsense activity generator
 - [fzf](https://github.com/junegunn/fzf) - fuzzy-finder (personal must have!)
@@ -45,7 +45,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
 - [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
 
-### binary analys
+### binary analysis
 
 - [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more.
 
