@@ -48,7 +48,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 ### binary analys
 
 - [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more.
- 
+
 ## Non-CLI
 
 ### Binary analysis
