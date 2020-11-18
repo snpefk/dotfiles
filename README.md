@@ -9,7 +9,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 ## CLI
 
 - ~~🦀 [eva](https://github.com/NerdyPepper/eva) - calculator~~
-- 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons 
+- 🦀 [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
 - 🦀 [dust](https://github.com/bootandy/dust) - fancy `du`
 - 🦀 [hexyl](https://github.com/sharkdp/hexyl) - hex viewer
@@ -28,6 +28,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
 - 🦀 [sd](https://github.com/chmln/sd) - sed alternative
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
 
 ### csv & spreadsheet
 
