@@ -28,7 +28,8 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
 - 🦀 [sd](https://github.com/chmln/sd) - sed alternative
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
-- [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
+- 🦀 [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
+- 🦀 [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell! 
 
 ### csv & spreadsheet
 
