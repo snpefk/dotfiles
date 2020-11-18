@@ -54,3 +54,6 @@ source /usr/share/fzf/completion.zsh
 
 # syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# starship
+eval "$(starship init zsh)"
