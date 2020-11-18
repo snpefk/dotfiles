@@ -41,6 +41,7 @@ alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 alias glow='glow -p'
 alias open='xdg-open'
+alias icat="kitty +kitten icat"
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
