@@ -39,7 +39,6 @@ alias ls='exa --group-directories-first --icons -l'
 alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
-alias glow='glow -p'
 alias open='xdg-open'
 alias icat="kitty +kitten icat"
 
