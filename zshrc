@@ -41,7 +41,7 @@ alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 alias open='xdg-open'
 alias icat="kitty +kitten icat"
-alias pods="watch -d kubectl get pods -o wide"
+alias pods="watch kubectl get pods -o wide"
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
