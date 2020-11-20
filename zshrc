@@ -41,6 +41,7 @@ alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 alias open='xdg-open'
 alias icat="kitty +kitten icat"
+alias pods="watch -d kubectl get pods -o wide"
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
@@ -57,3 +58,16 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # starship
 eval "$(starship init zsh)"
+
+function iplot {
+	cat << EOF | gnuplot
+	set terminal pngcairo enhanced font 'Fira Sans,10'
+    set autoscale
+    set samples 1000
+    set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"#fdf6e3" behind
+    set output '|kitty +kitten icat --stdin yes'
+    plot $@
+    set output '/dev/null'
+EOF
+}
+
