@@ -30,7 +30,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
 - 🦀 [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
 - 🦀 [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell! 
-
+- [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq. 
 ### csv & spreadsheet
 
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
