@@ -31,15 +31,18 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
 - 🦀 [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell! 
 - [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq. 
+- [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative 
+
 ### csv & spreadsheet
 
 - 🦀 [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
 - [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
 - [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data
 
-### docker
+### docker & kubernetes
 
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
+- [k9s](https://github.com/derailed/k9s) - Kubernetes CLI to manage your clusters 
 
 ### monitoring
 
