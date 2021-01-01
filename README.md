@@ -43,6 +43,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
 - [k9s](https://github.com/derailed/k9s) - Kubernetes CLI to manage your clusters 
+- [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker 
 
 ### monitoring
 
