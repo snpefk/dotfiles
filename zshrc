@@ -3,6 +3,7 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
 export GROOVY_HOME="/usr/share/groovy/"
+export CALIBRE_USE_DARK_PALETTE=1
 
 ZSH_THEME=""
 ENABLE_CORRECTION="true"
@@ -40,8 +41,12 @@ alias tree="exa --group-directories-first --icons -lT"
 alias rm='rm -r'
 alias dup='alacritty --working-directory $( pwd ) &' 
 alias open='xdg-open'
+alias glow="glow -p"
 alias icat="kitty +kitten icat"
-alias pods="watch kubectl get pods -o wide"
+alias ghv="gh repo view -w"
+
+# starship
+eval "$(starship init zsh)"
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
@@ -55,9 +60,6 @@ source /usr/share/fzf/completion.zsh
 
 # syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# starship
-eval "$(starship init zsh)"
 
 function iplot {
 	cat << EOF | gnuplot
