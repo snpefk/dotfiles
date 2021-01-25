@@ -32,7 +32,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - 🦀 [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell! 
 - [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq. 
 - [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative 
-- [bandwhich](https://github.com/imsnif/bandwhich) - Terminal bandwidth utilization tool
+- 🦀 [bandwhich](https://github.com/imsnif/bandwhich) - Terminal bandwidth utilization tool
 
 ### csv & spreadsheet
 
