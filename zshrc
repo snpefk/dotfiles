@@ -45,6 +45,8 @@ alias glow="glow -p"
 alias icat="kitty +kitten icat"
 alias ghv="gh repo view -w"
 
+bindkey '^[e' edit-command-line
+
 # starship
 eval "$(starship init zsh)"
 
