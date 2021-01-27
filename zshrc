@@ -45,6 +45,7 @@ alias glow="glow -p"
 alias icat="kitty +kitten icat"
 alias ghv="gh repo view -w"
 alias rg="rg -p"
+alias lg="lazygit"
 
 bindkey '^[e' edit-command-line
 
