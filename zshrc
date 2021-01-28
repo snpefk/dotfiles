@@ -46,6 +46,7 @@ alias icat="kitty +kitten icat"
 alias ghv="gh repo view -w"
 alias rg="rg -p"
 alias lg="lazygit"
+alias py3="python3"
 
 bindkey '^[e' edit-command-line
 
