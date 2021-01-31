@@ -1,5 +1,33 @@
-# Set random wallpaper from specified foler
 #!/usr/bin/env sh
-URI=file://$(shuf -n1 -e ~/Pictures/wallpaper/*)
-echo $URI
+
+while getopts ":bd" opt; do 
+    case $opt in 
+        b) RANGE_START=40; RANGE_END=100
+        ;;
+        d) RANGE_START=0; RANGE_END=40
+        ;;
+        \?) echo "Invalid option -$OPTARG" >&2
+        ;;
+    esac
+done
+
+if [ -z $RANGE_START ]
+then
+    echo "Pass the argument -b/-d"
+    exit 1
+fi
+
+HSB_PATTERN="hsb\(\d{1,4}\.\d{1,5},\d{1,4}\.\d{1,5}%,\d{1,4}\.\d{1,5}%\)$"
+BRIGHTNESS="-1"
+
+while [ $(($BRIGHTNESS >= $RANGE_START && $BRIGHTNESS <= $RANGE_END)) -eq 0 ]
+do
+    URI=file://$(shuf -n1 -e ~/Pictures/wallpaper/*)
+    echo $URI
+
+    IMAGE_INFO=$( convert $URI -colorspace hsb -resize 1x1 txt:- )
+    echo $IMAGE_INFO
+    BRIGHTNESS=$( rg $HSB_PATTERN -o <<< $IMAGE_INFO | cut -d',' -f3 | cut -d'.' -f1) 
+done
+
 gsettings set org.gnome.desktop.background picture-uri "$URI" 
