@@ -3,10 +3,9 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
 export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
 export GROOVY_HOME="/usr/share/groovy/"
-export CALIBRE_USE_DARK_PALETTE=1
 
 ZSH_THEME=""
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 plugins=(
   git
