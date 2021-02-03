@@ -29,3 +29,7 @@ set number
 nmap <F8> :TagbarToggle<CR>
 set tabstop=4
 set shiftwidth=4
+
+"fix yaml formatting
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
