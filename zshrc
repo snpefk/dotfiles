@@ -21,12 +21,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source $HOME/.config/lf/icons.sh
 
-# User configuration
-# Pure config
-# fpath+=$HOME/.zsh/pure
-# autoload -U promptinit; promptinit
-# prompt pure
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
