@@ -33,6 +33,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq. 
 - [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative 
 - 🦀 [bandwhich](https://github.com/imsnif/bandwhich) - Terminal bandwidth utilization tool
+- [grex](https://github.com/pemistahl/grex) - a command-line tool and library for generating regular expressions from user-provided test cases
 
 ### csv & spreadsheet
 
