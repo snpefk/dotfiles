@@ -34,6 +34,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative 
 - 🦀 [bandwhich](https://github.com/imsnif/bandwhich) - Terminal bandwidth utilization tool
 - [grex](https://github.com/pemistahl/grex) - a command-line tool and library for generating regular expressions from user-provided test cases
+- [lazygit](https://github.com/jesseduffield/lazygit) -  simple terminal UI for git commands
 
 ### csv & spreadsheet
 
