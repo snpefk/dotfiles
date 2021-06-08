@@ -15,6 +15,7 @@ plugins=(
   rust
   docker
   colored-man-pages
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -40,6 +41,7 @@ alias ghv="gh repo view -w"
 alias rg="rg -p"
 alias lg="lazygit"
 alias py3="python3"
+alias webcam="mplayer tv://device=/dev/video01" 
 
 bindkey '^[e' edit-command-line
 
