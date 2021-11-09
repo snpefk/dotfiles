@@ -1,5 +1,5 @@
 export ZSH="/home/snpefk/.oh-my-zsh"
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk/"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
 export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
 export GROOVY_HOME="/usr/share/groovy/"
@@ -16,6 +16,7 @@ plugins=(
   docker
   colored-man-pages
   kubectl
+  gradle-completion
 )
 
 source $ZSH/oh-my-zsh.sh

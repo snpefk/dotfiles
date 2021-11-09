@@ -54,12 +54,11 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
 - [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
 
-### binary analysis
+### misc
 
 - [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more.
-
-### fun 
 - [cbonsai](https://gitlab.com/jallbrit/cbonsai) - bonsai generator.
+- [gradle-completion](https://github.com/gradle/gradle-completion) - Gradle tab completion for bash and zsh.
 
 ## Non-CLI
 
