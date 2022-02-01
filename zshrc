@@ -3,20 +3,19 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
 export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
 export GROOVY_HOME="/usr/share/groovy/"
+#export PATH=${PATH}:Android/Sdk/platform-tools
 
 ZSH_THEME=""
 ENABLE_CORRECTION="false"
 
 plugins=(
   git
-  cargo
   pip
   virtualenvwrapper
   rust
   docker
   colored-man-pages
   kubectl
-  gradle-completion
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -39,7 +38,7 @@ alias open='xdg-open'
 alias glow="glow -p"
 alias icat="kitty +kitten icat"
 alias ghv="gh repo view -w"
-alias rg="rg -p"
+alias rg="rg -p --hidden --smart-case"
 alias lg="lazygit"
 alias py3="python3"
 alias webcam="mplayer tv://device=/dev/video01" 
