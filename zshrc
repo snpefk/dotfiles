@@ -16,6 +16,8 @@ plugins=(
   docker
   colored-man-pages
   kubectl
+  gradle-completion
+  aws
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -72,4 +74,11 @@ function iplot {
     set output '/dev/null'
 EOF
 }
+
+
+# The next line updates PATH for Yandex Cloud CLI.
+if [ -f '/home/snpefk/yandex-cloud/path.bash.inc' ]; then source '/home/snpefk/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/home/snpefk/yandex-cloud/completion.zsh.inc' ]; then source '/home/snpefk/yandex-cloud/completion.zsh.inc'; fi
 
