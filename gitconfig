@@ -1,9 +1,10 @@
 [user]
-	email = snpefk@gmail.com
-	name = snpefk
+	email = f.tolstonozhenko@cardsmobile.ru
+	name = Федор Толстоноженко
 
 [core]
-	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+	pager = delta --plus-style="#012800" --minus-style="#340001" --syntax-theme='Monokai Extended'
+	autocrlf = input
 
 [interactive]
     diffFilter = delta --color-only
