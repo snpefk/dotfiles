@@ -1,9 +1,17 @@
 export ZSH="/home/snpefk/.oh-my-zsh"
+
+export XDG_DATA_HOME=".local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
+
 export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
 export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
+export ANDROID_HOME="$XDG_DATA_HOME/android"
+
 export GROOVY_HOME="/usr/share/groovy/"
-#export PATH=${PATH}:Android/Sdk/platform-tools
+
 
 ZSH_THEME=""
 ENABLE_CORRECTION="false"
