@@ -1,12 +1,13 @@
 export ZSH="/home/snpefk/.oh-my-zsh"
 
-export XDG_DATA_HOME=".local/share"
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME    ="$HOME"/.local/share
+export XDG_CONFIG_HOME  ="$HOME/.config"
+export XDG_CACHE_HOME   ="$HOME/.cache"
+export XDG_STATE_HOME   ="$HOME"/.local/state
 
-export ANDROID_SDK_ROOT="/home/snpefk/.android/sdk"
-export ANDROID_AVD_HOME="/home/snpefk/.android/avd"
-export ANDROID_HOME="$XDG_DATA_HOME"/android
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+export ANDROID_HOME="$ANDROID_USER_HOME"/sdk
+export ANDROID_AVD_HOME="$ANDROID_USER_HOME"/avd
 
 export GROOVY_HOME="/usr/share/groovy/"
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
@@ -86,8 +87,24 @@ EOF
 }
 
 
-# The next line updates PATH for Yandex Cloud CLI.
-if [ -f '/home/snpefk/yandex-cloud/path.bash.inc' ]; then source '/home/snpefk/yandex-cloud/path.bash.inc'; fi
+export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
+export CABAL_DIR="$XDG_DATA_HOME"/cabal
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export K9SCONFIG="$XDG_CONFIG_HOME"/k9s
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export PYLINTHOME="${XDG_CACHE_HOME}"/pylint
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
+# export HISTFILE="$XDG_STATE_HOME"/zsh/history
+export WINEPREFIX="$XDG_DATA_HOME"/wine
+export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
+export GOPATH="$XDG_DATA_HOME"/go
 
 # The next line enables shell command completion for yc.
 if [ -f '/home/snpefk/yandex-cloud/completion.zsh.inc' ]; then source '/home/snpefk/yandex-cloud/completion.zsh.inc'; fi
