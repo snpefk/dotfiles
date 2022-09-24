@@ -54,7 +54,15 @@ alias ghv="gh repo view -w"
 alias rg="rg -p --hidden --smart-case"
 alias lg="lazygit"
 alias py3="python3"
-alias webcam="mplayer tv://device=/dev/video01" 
+
+# glab shortcuts
+alias gmv="glab mr view --web"
+alias gmu="glab mr update -a f.tolstonozhenko --reviewer=s.akentev,alek.s.krylov"
+
+# jira shortcuts 
+alias ji="jira issue"
+alias jic="jira issue create"
+alias jil='jira issue list -a$(jira me) --order-by status --reverse -s~Closed --paginate 10'
 
 bindkey '^[e' edit-command-line
 
@@ -63,6 +71,7 @@ eval "$(starship init zsh)"
 
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
+eval "$(glab completion -s zsh)"
 
 # kubernates autocomplete
 source <(kubectl completion zsh) 
@@ -106,6 +115,12 @@ export WINEPREFIX="$XDG_DATA_HOME"/wine
 export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
 export GOPATH="$XDG_DATA_HOME"/go
 
-# The next line enables shell command completion for yc.
-if [ -f '/home/snpefk/yandex-cloud/completion.zsh.inc' ]; then source '/home/snpefk/yandex-cloud/completion.zsh.inc'; fi
+export PATH="$GOPATH/bin:$PATH"
+
+# Jira utils 
+jira_start_work () {
+	jira issue assign $1 $(jira me)
+	jira issue move $1 "Open"
+	jira issue move $1 "In Progress"
+}
 
