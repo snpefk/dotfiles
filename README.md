@@ -1,7 +1,5 @@
 # dotfiles
 
-![screenshot](https://raw.githubusercontent.com/snpefk/dotfiles/master/screenshot.png)
-
 ## Scripts
 
 Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
@@ -14,7 +12,8 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [dust](https://github.com/bootandy/dust) - fancy `du`
 - [hexyl](https://github.com/sharkdp/hexyl) - hex viewer
 - ~~🦀[procs](https://github.com/dalance/procs) - replacement for `ps`~~
-- 🦀[tealdeer](https://github.com/dbrgn/tealdeer) - a very fast implementation of `tldr`: a collection of simplified and community-driven man pages
+- 🦀[tealdeer](https://github.com/dbrgn/tealdeer) - a very fast implementation of `tldr`: a collection of simplified and
+  community-driven man pages
 - [bat](https://github.com/sharkdp/bat) - cat(1) clone with syntax highlighting and Git integration
 - [fd](https://github.com/sharkdp/fd) - simple, fast and user-friendly alternative to `find`
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - fast & user-friendly alternative to `grep`
@@ -29,36 +28,42 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - ~~[sd](https://github.com/chmln/sd) - sed alternative~~
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
 - 🦀[zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
-- [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for any shell! 
-- [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq. 
-- [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative 
+- [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for
+  any shell!
+- [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq.
+- [duf](https://github.com/muesli/duf) - Disk Usage/Free Utility - a better 'df' alternative
 - [bandwhich](https://github.com/imsnif/bandwhich) - Terminal bandwidth utilization tool
-- [grex](https://github.com/pemistahl/grex) - a command-line tool and library for generating regular expressions from user-provided test cases
-- [lazygit](https://github.com/jesseduffield/lazygit) -  simple terminal UI for git commands
-- [glab](https://github.com/profclems/glab) - a GitLab CLI tool bringing GitLab to your command line 
-- [jira-cli](https://github.com/ankitpokhrel/jira-cli) - feature-rich interactive Jira command line. 
+- [grex](https://github.com/pemistahl/grex) - a command-line tool and library for generating regular expressions from
+  user-provided test cases
+- [lazygit](https://github.com/jesseduffield/lazygit) - simple terminal UI for git commands
+- [glab](https://github.com/profclems/glab) - a GitLab CLI tool bringing GitLab to your command line
+- [jira-cli](https://github.com/ankitpokhrel/jira-cli) - feature-rich interactive Jira command line.
 
 ### csv & spreadsheet
 
 - [xsv](https://github.com/BurntSushi/xsv) - CSV command line toolkit
-- [sc-im](https://github.com/andmarti1424/sc-im) -  spreadsheet viewer
+- [sc-im](https://github.com/andmarti1424/sc-im) - spreadsheet viewer
 - [visidata](https://github.com/saulpw/visidata) - A terminal spreadsheet multitool for discovering and arranging data
 
 ### docker & kubernetes
 
 - [dive](https://github.com/wagoodman/dive) - A tool for exploring a docker image and layer contents
-- [k9s](https://github.com/derailed/k9s) - Kubernetes CLI to manage your clusters 
-- [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker 
+- [k9s](https://github.com/derailed/k9s) - Kubernetes CLI to manage your clusters
+- [lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker
 
 ### monitoring
 
-- 🦀[ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.
-- [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all metrics in informative way
-- [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
+- 🦀[ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it
+  only for CPU chart.
+- [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all
+  metrics in informative way
+- [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting.
+  Configured with a simple YAML file.
 
 ### misc
 
-- [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset: disassembler, hexviewer and more.
+- [radare2](https://github.com/radareorg/radare2) - UNIX-like reverse engineering framework and command-line toolset:
+  disassembler, hexviewer and more.
 - [cbonsai](https://gitlab.com/jallbrit/cbonsai) - bonsai generator.
 - [gradle-completion](https://github.com/gradle/gradle-completion) - Gradle tab completion for bash and zsh.
 
