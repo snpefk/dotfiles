@@ -54,6 +54,7 @@ alias ghv="gh repo view -w"
 alias rg="rg -p --hidden --smart-case"
 alias lg="lazygit"
 alias py3="python3"
+alias idea="intellij-idea-ultimate-edition"
 
 # glab shortcuts
 alias gmv="glab mr view --web"
