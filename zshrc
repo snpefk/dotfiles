@@ -69,9 +69,9 @@ bindkey '^[e' edit-command-line
 
 # starship
 eval "$(starship init zsh)"
-
 # fast navigation through zoxide
 eval "$(zoxide init zsh)"
+# glab autocomplete
 eval "$(glab completion -s zsh)"
 
 # kubernates autocomplete
@@ -83,19 +83,6 @@ source /usr/share/fzf/completion.zsh
 
 # syntax highlight
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-function iplot {
-	cat << EOF | gnuplot
-	set terminal pngcairo enhanced font 'Fira Sans,10'
-    set autoscale
-    set samples 1000
-    set object 1 rectangle from screen 0,0 to screen 1,1 fillcolor rgb"#fdf6e3" behind
-    set output '|kitty +kitten icat --stdin yes'
-    plot $@
-    set output '/dev/null'
-EOF
-}
-
 
 export CABAL_CONFIG="$XDG_CONFIG_HOME"/cabal/config
 export CABAL_DIR="$XDG_DATA_HOME"/cabal
@@ -111,7 +98,6 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
-# export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
 export GOPATH="$XDG_DATA_HOME"/go
