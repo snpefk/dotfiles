@@ -10,7 +10,7 @@ case "$1" in
     *.7z) 7z l "$1";;
 	*.md) glow -s dark "$1";;
     *.pdf) pdftotext "$1" -;;
-    *.jpg) icat "$1";;
+    *.jpg|*.png|*.jpeg|*.JPG) catimg -H 45 "$1";;
 	*.o) nm "$1" | less ;;
 	*.torrent) transmission-show "$1";;
 	*.iso) iso-info --no-header -l "$1";;
