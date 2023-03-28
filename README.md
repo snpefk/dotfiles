@@ -6,13 +6,13 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ## CLI
 
-- ~~🦀 [eva](https://github.com/NerdyPepper/eva) - calculator~~
-- 🦀[exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons
+- ~~[eva](https://github.com/NerdyPepper/eva) - calculator~~
+- [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
 - [dust](https://github.com/bootandy/dust) - fancy `du`
 - [hexyl](https://github.com/sharkdp/hexyl) - hex viewer
-- ~~🦀[procs](https://github.com/dalance/procs) - replacement for `ps`~~
-- 🦀[tealdeer](https://github.com/dbrgn/tealdeer) - a very fast implementation of `tldr`: a collection of simplified and
+- ~~[procs](https://github.com/dalance/procs) - replacement for `ps`~~
+- [tealdeer](https://github.com/dbrgn/tealdeer) - a very fast implementation of `tldr`: a collection of simplified and
   community-driven man pages
 - [bat](https://github.com/sharkdp/bat) - cat(1) clone with syntax highlighting and Git integration
 - [fd](https://github.com/sharkdp/fd) - simple, fast and user-friendly alternative to `find`
@@ -27,7 +27,7 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 - [delta](https://github.com/dandavison/delta) - syntax-highlight git diff output
 - ~~[sd](https://github.com/chmln/sd) - sed alternative~~
 - [python-miio](https://github.com/rytilahti/python-miio) - cli tools for controlling Xiaomi smart appliances
-- 🦀[zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
+- [zoxide](https://github.com/ajeetdsouza/zoxide) - a faster way to navigate your filesystem
 - [starship](https://github.com/starship/starship) - The minimal, blazing-fast, and infinitely customizable prompt for
   any shell!
 - [jiq](https://github.com/simeji/jid) - you can drill down JSON interactively by using filtering queries like jq.
@@ -53,12 +53,12 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 
 ### monitoring
 
-- 🦀[ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it
-  only for CPU chart.
+- ~~[ytop](https://github.com/cjbassi/ytop/) - simple TUI based monitor, fast, but has a slightly bad interface. Keep it only for CPU chart.~~
 - [glances](https://github.com/nicolargo/glances) - system monitor written in python, slow starttup, but captures all
   metrics in informative way
 - [sampler](https://github.com/sqshq/sampler) - tool for shell commands execution, visualization and alerting.
   Configured with a simple YAML file.
+- [btop](https://github.com/aristocratos/btop) - resource monitor with usefull network section 
 
 ### misc
 
