@@ -10,7 +10,7 @@ export ANDROID_HOME="$ANDROID_USER_HOME"/sdk
 export ANDROID_AVD_HOME="$ANDROID_USER_HOME"/avd
 
 export GROOVY_HOME="/usr/share/groovy/"
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk/"
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME"/aws/credentials
@@ -55,15 +55,30 @@ alias rg="rg -p --hidden --smart-case"
 alias lg="lazygit"
 alias py3="python3"
 alias idea="intellij-idea-ultimate-edition"
+alias speedtest="speedtest-go"
 
 # glab shortcuts
 alias gmv="glab mr view --web"
-alias gmu="glab mr update -a f.tolstonozhenko --reviewer=s.akentev,alek.s.krylov"
+alias grv="glab repo view --web"
+alias gmc="glab mr create -a f.tolstonozhenko --reviewer=and.tkachenko,t.yubzaev --push --fill --fill-commit-body"
+alias gmcs="glab_mr_create_with_title_from_last_commit"
+alias gmm="glab mr merge --when-pipeline-succeeds --rebase --yes"
+
+glab_mr_create_with_title_from_last_commit () {
+	gmc -t"$(git log -1 --pretty=%B)"
+}
 
 # jira shortcuts 
 alias ji="jira issue"
 alias jic="jira issue create"
-alias jil='jira issue list -a$(jira me) --order-by status --reverse -s~Closed --paginate 10'
+alias jim="jira_issue_move_current" 
+alias jicb="jira issue create -tBug"
+alias jime="jira issue list -a$(jira me) --order-by status --reverse --paginate 10 -q\"status not in (Done, Released, Closed)\""
+alias jsw="jira_start_work"
+alias jivc="jira_issue_view_current"
+alias jinj="jira issue list -l inject -q\"status not in (Done, Released)\""
+alias jbck="jira_search_backlog"
+alias jisrch="jira_search"
 
 bindkey '^[e' edit-command-line
 
@@ -104,6 +119,11 @@ export GOPATH="$XDG_DATA_HOME"/go
 
 export PATH="$GOPATH/bin:$PATH"
 
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
+path+=("$CARGO_HOME/bin")
+
 # Jira utils 
 jira_start_work () {
 	jira issue assign $1 $(jira me)
@@ -111,3 +131,18 @@ jira_start_work () {
 	jira issue move $1 "In Progress"
 }
 
+jira_issue_view_current() { 
+	jira issue view $(git branch --show-current) --plain 
+}
+
+jira_search_backlog () { 
+	jira issue list -sBacklog -q"text ~ $1" 
+}
+
+jira_search () { 
+	jira issue list -q"text ~ $1"
+}
+
+jira_issue_move_current () { 
+	jira issue move $(git branch --show-current)
+}
