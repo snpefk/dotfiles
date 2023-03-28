@@ -3,7 +3,7 @@
 	name = snpefk
 
 [core]
-	pager = delta --plus-style="#012800" --minus-style="#340001" --syntax-theme='Monokai Extended'
+	pager = delta
 	autocrlf = input
 
 [interactive]
