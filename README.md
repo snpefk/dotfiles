@@ -7,7 +7,8 @@ Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
 ## CLI
 
 - ~~[eva](https://github.com/NerdyPepper/eva) - calculator~~
-- [exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons
+- ~~[exa](https://github.com/ogham/exa) - modern replacement for `ls` with color output & icons~~
+- [eza](https://github.com/eza-community/eza) - `exa` replacement 
 - [lf](https://github.com/gokcehan/lf) - terminal file manager
 - [dust](https://github.com/bootandy/dust) - fancy `du`
 - [hexyl](https://github.com/sharkdp/hexyl) - hex viewer
