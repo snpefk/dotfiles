@@ -1,5 +1,62 @@
 # dotfiles
 
+Managed with [chezmoi](https://www.chezmoi.io/).
+
+## Setup
+
+### Prerequisites
+
+Install `chezmoi` first:
+
+- https://www.chezmoi.io/install/
+
+### Apply this repository
+
+From this repository root:
+
+```bash
+./install
+```
+
+This runs:
+
+```bash
+chezmoi init --apply --source "$(pwd)"
+```
+
+### Daily workflow
+
+- Apply current source state:
+
+  ```bash
+  chezmoi apply
+  ```
+
+- Edit a target via chezmoi:
+
+  ```bash
+  chezmoi edit ~/.zshrc
+  ```
+
+- See pending changes:
+
+  ```bash
+  chezmoi diff
+  ```
+
+- Sync from target back to source state:
+
+  ```bash
+  chezmoi re-add
+  ```
+
+## Repository layout (chezmoi source state)
+
+- `dot_config/*` -> `~/.config/*`
+- `dot_zshrc` -> `~/.zshrc`
+- `dot_gitconfig` -> `~/.gitconfig`
+- `dot_code` -> `~/code/dotfiles`
+
 ## Scripts
 
 Content of the `scripts` folder should be copied by hand to `~/.local/bin/`.
