@@ -15,7 +15,7 @@ super + Escape
 
 super + e
 	nemo 
-	# alacritty -e lf 
+	# terminal file manager launcher goes here (e.g. yazi)
 #
 # bspwm hotkeys
 #
