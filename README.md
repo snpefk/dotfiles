@@ -53,9 +53,18 @@ chezmoi init --apply --source "$(pwd)"
 ## Repository layout (chezmoi source state)
 
 - `dot_config/*` -> `~/.config/*`
+- `Library/Application Support/iTerm2/DynamicProfiles/*.json` -> `~/Library/Application Support/iTerm2/DynamicProfiles/*.json`
 - `dot_zshrc` -> `~/.zshrc`
 - `dot_gitconfig` -> `~/.gitconfig`
 - `dot_code` -> `~/code/dotfiles`
+
+## iTerm2
+
+iTerm2 dynamic profiles are managed with chezmoi in:
+
+- `Library/Application Support/iTerm2/DynamicProfiles/default.json`
+
+If profile loading is disabled in iTerm2, enable it in `Settings -> Profiles` (Dynamic Profiles are loaded automatically from the default folder above).
 
 ## Scripts
 

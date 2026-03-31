@@ -1,0 +1,28 @@
+{
+  "Profiles": [
+    {
+      "Name": "Default",
+      "Guid": "1A20A870-4C66-4DDB-A113-4D9C4A6D4C4A",
+      "Normal Font": "ComicCodeLigatures-Regular 13",
+      "Use Bright Bold": true,
+      "Cursor Type": 2,
+      "Columns": 120,
+      "Rows": 40,
+      "Scrollback Lines": 10000,
+      "Unlimited Scrollback": false,
+      "Transparency": 0.1,
+      "Blend": 0.2,
+      "Draw Powerline Glyphs": true,
+      "ASCII Anti Aliased": true,
+      "Non Ascii Anti Aliased": true,
+      "Use Non-ASCII Font": false,
+      "Badge Color": {
+        "Blue Component": 0.0,
+        "Color Space": "sRGB",
+        "Green Component": 0.0,
+        "Red Component": 0.0,
+        "Alpha Component": 0.5
+      }
+    }
+  ]
+}
