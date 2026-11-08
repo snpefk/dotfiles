@@ -1,0 +1,24 @@
+{{- if not (hasKey . "profile") -}}
+{{- fail "Choose a laptop profile first: chezmoi --source \"$PWD\" init" -}}
+{{- end -}}
+{{- if not (has .profile (list "work" "personal")) -}}
+{{- fail "Laptop profile must be work or personal" -}}
+{{- end -}}
+# Shared macOS configuration. Select work/personal with `chezmoi init`.
+export DOTFILES_PROFILE={{ .profile | quote }}
+
+# Source at top level so declarations in plugins keep their normal scope.
+for _dotfiles_module in env shell aliases integrations functions; do
+  [[ -r "$HOME/.config/zsh/$_dotfiles_module.zsh" ]] &&
+    source "$HOME/.config/zsh/$_dotfiles_module.zsh"
+done
+unset _dotfiles_module
+
+# No work tools or identities are assumed until their scope is confirmed.
+# Keep credentials and machine-specific settings out of the repository.
+[[ -r "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
+[[ -r "$HOME/.zshrc.$DOTFILES_PROFILE.local" ]] && source "$HOME/.zshrc.$DOTFILES_PROFILE.local"
+
+# Highlighting must follow widgets and local customizations.
+[[ -r "$HOME/.config/zsh/highlighting.zsh" ]] && source "$HOME/.config/zsh/highlighting.zsh"
+true

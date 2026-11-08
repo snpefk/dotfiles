@@ -1,0 +1,15 @@
+# Login-shell environment: Homebrew initialization belongs here, not in .zshrc.
+if [[ -x /opt/homebrew/bin/brew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+elif [[ -x /usr/local/bin/brew ]]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
+
+typeset -U path PATH
+[[ -d "$HOME/Library/Application Support/JetBrains/Toolbox/scripts" ]] &&
+  path+=("$HOME/Library/Application Support/JetBrains/Toolbox/scripts")
+[[ -d /Applications/Obsidian.app/Contents/MacOS ]] &&
+  path+=(/Applications/Obsidian.app/Contents/MacOS)
+[[ -r "$HOME/.orbstack/shell/init.zsh" ]] && source "$HOME/.orbstack/shell/init.zsh"
+[[ -r "$HOME/.zprofile.local" ]] && source "$HOME/.zprofile.local"
+true
