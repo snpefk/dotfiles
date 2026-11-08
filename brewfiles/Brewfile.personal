@@ -1,0 +1,9 @@
+# Load shared tools, then a small selection of apps from this personal Mac.
+shared = File.join(__dir__, "Brewfile.shared")
+eval(File.read(shared), binding, shared)
+
+cask "anki"
+cask "obsidian"
+cask "firefox"
+cask "spotify"
+cask "telegram"

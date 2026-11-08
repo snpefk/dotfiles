@@ -1,6 +1,8 @@
 # Repository metadata and reference material must never land in $HOME.
 README.md
 install
+Brewfile
+brewfiles
 scripts
 legacy
 tests

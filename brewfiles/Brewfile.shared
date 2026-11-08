@@ -1,0 +1,53 @@
+# Shared baseline and selected CLI tools used on the current Mac.
+# This is curated, not a dump of every installed formula or dependency.
+
+# Dotfiles, Git, and editor.
+brew "chezmoi"
+brew "git"
+brew "git-delta"
+brew "git-lfs"
+brew "gh"
+brew "neovim"
+
+# Interactive shell and navigation.
+brew "starship"
+brew "zoxide"
+brew "fzf"
+brew "eza"
+brew "bat"
+brew "fd"
+brew "ripgrep"
+brew "yazi"
+brew "lazygit"
+brew "watch"
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"
+
+# Development tools. Project Gradle versions still come from ./gradlew.
+brew "python"
+brew "uv"
+brew "virtualenvwrapper"
+brew "cmake"
+brew "kotlin"
+brew "jq"
+
+# Diagnostics, documentation, and file utilities.
+brew "dust"
+brew "hexyl"
+brew "hyperfine"
+brew "tealdeer"
+brew "tokei"
+brew "imagemagick"
+
+# Container clients; choose/install a container engine separately.
+brew "lazydocker"
+brew "kubectl"
+brew "k9s"
+brew "dive"
+brew "crane"
+
+cask "iterm2"
+
+# Oh My Zsh, its custom zsh-vi-mode plugin, SDKMAN/JDKs, Android SDKs,
+# licensed fonts, and legacy Qt 5 are not installed by this Brewfile.
+# Existing installations remain supported by the guarded shell configuration.

@@ -1,0 +1,6 @@
+# Load shared tools. Work-specific additions can be added once confirmed.
+shared = File.join(__dir__, "Brewfile.shared")
+eval(File.read(shared), binding, shared)
+
+# Do not duplicate shared tools here.
+# Authentication, accounts, and company-managed software stay outside this file.
