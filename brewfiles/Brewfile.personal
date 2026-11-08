@@ -14,3 +14,4 @@ cask "raycast" # App launcher and desktop command palette.
 cask "karabiner-elements" # Keyboard remapping and custom key combinations.
 cask "localsend" # Transfer files between devices on the local network.
 cask "the-unarchiver" # Extract archives beyond macOS's built-in support.
+cask "vorssaint" # Menu bar keep-awake, system monitoring, and volume mixer.
