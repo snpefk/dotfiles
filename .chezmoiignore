@@ -2,6 +2,7 @@
 README.md
 install
 scripts
+legacy
 tests
 screenshot.png
 .env
