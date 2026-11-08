@@ -1,9 +1,16 @@
-# Load shared tools, then a small selection of apps from this personal Mac.
+# Load shared tools, then selected apps installed on this personal Mac.
 shared = File.join(__dir__, "Brewfile.shared")
 eval(File.read(shared), binding, shared)
 
-cask "anki"
-cask "obsidian"
-cask "firefox"
-cask "spotify"
-cask "telegram"
+cask "anki" # Spaced-repetition flashcards.
+cask "obsidian" # Markdown notes and knowledge management.
+cask "firefox" # Web browser.
+cask "spotify" # Music playback.
+cask "telegram-desktop" # Messaging.
+cask "orbstack" # Local container engine and Linux environments.
+cask "openchamber" # Desktop interface for the coding-agent workflow.
+cask "intellij-idea" # IDE for JVM development.
+cask "raycast" # App launcher and desktop command palette.
+cask "karabiner-elements" # Keyboard remapping and custom key combinations.
+cask "localsend" # Transfer files between devices on the local network.
+cask "the-unarchiver" # Extract archives beyond macOS's built-in support.

@@ -2,10 +2,13 @@
 # This is curated, not a dump of every installed formula or dependency.
 
 # Dotfiles, Git, and editor.
+tap "anomalyco/tap" # Source for the installed OpenCode CLI.
+brew "anomalyco/tap/opencode" # AI coding assistant used by the oc alias.
 brew "chezmoi"
 brew "git"
 brew "git-delta"
 brew "git-lfs"
+brew "git-filter-repo" # Rewrite repository history, including removing unwanted files.
 brew "gh"
 brew "neovim"
 
@@ -20,6 +23,7 @@ brew "ripgrep"
 brew "yazi"
 brew "lazygit"
 brew "watch"
+brew "asciinema" # Record and replay terminal sessions.
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
@@ -30,6 +34,9 @@ brew "virtualenvwrapper"
 brew "cmake"
 brew "kotlin"
 brew "jq"
+brew "go" # Go compiler and development tools.
+brew "maven" # Build JVM projects that use Maven.
+brew "awscli" # Manage AWS resources from the terminal.
 
 # Diagnostics, documentation, and file utilities.
 brew "dust"
@@ -38,6 +45,14 @@ brew "hyperfine"
 brew "tealdeer"
 brew "tokei"
 brew "imagemagick"
+brew "wget" # Download files and mirror web content.
+brew "trash" # Move files to macOS Trash instead of permanently deleting them.
+brew "rclone" # Copy and sync files with cloud storage.
+brew "ripgrep-all" # Search inside PDFs, documents, and archives.
+brew "pandoc" # Convert between document and markup formats.
+brew "poppler" # PDF inspection/conversion tools and file previews.
+brew "yt-dlp" # Download supported online video and audio.
+brew "scrcpy" # Mirror and control Android devices over ADB.
 
 # Container clients; choose/install a container engine separately.
 brew "lazydocker"
@@ -47,6 +62,7 @@ brew "dive"
 brew "crane"
 
 cask "iterm2"
+cask "font-hack-nerd-font" # Terminal font with glyphs for prompts and file icons.
 
 # Oh My Zsh, its custom zsh-vi-mode plugin, SDKMAN/JDKs, Android SDKs,
 # licensed fonts, and legacy Qt 5 are not installed by this Brewfile.
