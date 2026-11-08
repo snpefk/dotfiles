@@ -1,0 +1,56 @@
+{{- if or (not (hasKey . "gitName")) (not (hasKey . "gitEmail")) -}}
+{{- fail "Set this laptop's Git identity first: chezmoi --source \"$PWD\" init" -}}
+{{- end -}}
+{{- if or (eq (trim .gitName) "") (eq (trim .gitEmail) "") -}}
+{{- fail "Git author name and email must not be empty" -}}
+{{- end -}}
+[user]
+	name = {{ .gitName | quote }}
+	email = {{ .gitEmail | quote }}
+	useConfigOnly = true
+
+[core]
+	autocrlf = input
+	fsmonitor = true
+	untrackedCache = true
+{{ if lookPath "delta" -}}
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	side-by-side = true
+{{ end }}
+[advice]
+	pushNonFastForward = false
+
+[merge]
+	conflictStyle = zdiff3
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = true
+
+[rerere]
+	enabled = true
+
+[rebase]
+	updateRefs = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[credential]
+	helper = osxkeychain
+
+# Keep authentication helpers, signing and repository maintenance paths local.
+# This include comes last so machine-specific settings can override the defaults.
+[include]
+	path = ~/.gitconfig.local
