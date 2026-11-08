@@ -1,13 +1,45 @@
 #!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if ! command -v chezmoi >/dev/null 2>&1; then
-  echo "chezmoi is not installed."
-  echo "Install it first: https://www.chezmoi.io/install/"
+if [[ "$(uname -s)" != Darwin ]]; then
+  echo "These dotfiles support macOS only." >&2
   exit 1
 fi
 
-chezmoi init --apply --source "${BASEDIR}" "${@}"
+case "${1:-}" in
+  ""|--apply) ;;
+  *) echo "Usage: ./install [--apply]" >&2; exit 2 ;;
+esac
+if (( $# > 1 )); then
+  echo "Usage: ./install [--apply]" >&2
+  exit 2
+fi
+
+if ! command -v chezmoi >/dev/null 2>&1; then
+  echo "chezmoi is not installed."
+  echo "Install it first: brew install chezmoi"
+  exit 1
+fi
+
+# No init/apply side effects unless explicitly requested. --source selects this
+# checkout without changing the user's default chezmoi configuration.
+if [[ "${1:-}" != --apply ]]; then
+  chezmoi --source "$BASEDIR" diff
+  echo "Preview only. Review README.md before running ./install --apply."
+  exit 0
+fi
+
+# Back up only the managed files that already exist. Never overwrite a backup.
+managed_files="$(chezmoi --source "$BASEDIR" managed --include=files --path-style=relative)"
+backup_dir="$(mktemp -d "$HOME/.dotfiles-backup.XXXXXX")"
+while IFS= read -r relative; do
+  if [[ -f "$HOME/$relative" || -L "$HOME/$relative" ]]; then
+    mkdir -p "$backup_dir/$(dirname "$relative")"
+    cp -pP "$HOME/$relative" "$backup_dir/$relative"
+  fi
+done <<< "$managed_files"
+echo "Existing managed files backed up to: $backup_dir"
+chezmoi --source "$BASEDIR" apply

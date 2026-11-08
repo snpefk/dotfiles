@@ -1,0 +1,18 @@
+# Repository metadata and reference material must never land in $HOME.
+README.md
+install
+scripts
+tests
+screenshot.png
+.env
+.env.*
+.gitignore
+.junie
+.DS_Store
+*.local
+AGENTS.md
+
+# macOS-only repository: do not apply its configuration on another OS.
+{{ if ne .chezmoi.os "darwin" }}
+**
+{{ end }}
