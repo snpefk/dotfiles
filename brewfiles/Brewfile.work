@@ -1,6 +1,41 @@
-# Load shared tools. Work-specific additions can be added once confirmed.
+# Load shared tools, then selected tools installed on this work Mac.
 shared = File.join(__dir__, "Brewfile.shared")
 eval(File.read(shared), binding, shared)
 
 # Do not duplicate shared tools here.
 # Authentication, accounts, and company-managed software stay outside this file.
+
+tap "hashicorp/tap"
+tap "namespacelabs/namespace"
+
+# CI/CD and GitHub Actions.
+brew "actionlint" # Lint GitHub Actions workflows.
+brew "act" # Run GitHub Actions workflows locally.
+brew "zizmor" # Static security analysis for GitHub Actions.
+brew "pre-commit" # Run repository pre-commit hooks.
+brew "yamllint" # Lint YAML files.
+brew "yamlfmt" # Format YAML files.
+brew "namespacelabs/namespace/nsc" # Namespace runners and remote builders CLI.
+
+# Infrastructure.
+brew "helm" # Kubernetes package manager.
+brew "hashicorp/tap/packer" # Build runner and machine images.
+brew "terragrunt" # Terraform/OpenTofu wrapper.
+
+# Development and work tooling.
+brew "node@22" # Node runtime for mbxcli and JS tooling.
+brew "mise" # Per-project tool versions.
+brew "jj" # Jujutsu version control.
+brew "jira-cli" # Jira from the terminal.
+brew "slackcat" # Post files and command output to Slack.
+brew "typst" # Typesetting for documents.
+brew "graphviz" # Render graphs and diagrams.
+brew "btop" # Resource monitor.
+brew "htop" # Process viewer.
+
+cask "android-studio" # IDE and SDK manager for Android SDK work.
+cask "temurin@17" # JDK 17 for Android/Gradle builds.
+cask "zed" # Code editor.
+cask "clickhouse" # ClickHouse client and local server.
+cask "alt-tab" # Windows-style window switcher.
+cask "dockdoor" # Dock window previews.
