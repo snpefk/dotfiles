@@ -15,6 +15,12 @@ screenshot.png
 *.local
 AGENTS.md
 
+# Work-only configuration.
+{{ if ne .profile "work" }}
+.config/zsh/work.zsh
+.gitconfig-mapbox
+{{ end }}
+
 # macOS-only repository: do not apply its configuration on another OS.
 {{ if ne .chezmoi.os "darwin" }}
 **

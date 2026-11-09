@@ -13,8 +13,10 @@ for _dotfiles_module in env shell aliases integrations functions; do
     source "$HOME/.config/zsh/$_dotfiles_module.zsh"
 done
 unset _dotfiles_module
+{{- if eq .profile "work" }}
+[[ -r "$HOME/.config/zsh/work.zsh" ]] && source "$HOME/.config/zsh/work.zsh"
+{{- end }}
 
-# No work tools or identities are assumed until their scope is confirmed.
 # Keep credentials and machine-specific settings out of the repository.
 [[ -r "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 [[ -r "$HOME/.zshrc.$DOTFILES_PROFILE.local" ]] && source "$HOME/.zshrc.$DOTFILES_PROFILE.local"
