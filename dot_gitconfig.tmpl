@@ -11,6 +11,7 @@
 
 [core]
 	autocrlf = input
+	editor = nvim
 	fsmonitor = true
 	untrackedCache = true
 {{ if lookPath "delta" -}}
@@ -21,8 +22,12 @@
 
 [delta]
 	navigate = true
+	line-numbers = true
 	side-by-side = true
 {{ end }}
+[commit]
+	template = ~/.gitmessage
+
 [advice]
 	pushNonFastForward = false
 
@@ -49,6 +54,20 @@
 
 [credential]
 	helper = osxkeychain
+{{- if eq .profile "work" }}
+{{- $gh := lookPath "gh" | default "gh" }}
+
+[credential "https://github.com"]
+	helper =
+	helper = !{{ $gh }} auth git-credential
+
+[credential "https://gist.github.com"]
+	helper =
+	helper = !{{ $gh }} auth git-credential
+
+[includeIf "gitdir:~/code/mapbox/"]
+	path = ~/.gitconfig-mapbox
+{{- end }}
 
 # Keep authentication helpers, signing and repository maintenance paths local.
 # This include comes last so machine-specific settings can override the defaults.

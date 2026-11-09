@@ -2,18 +2,25 @@
 {{- if not (has $profile (list "work" "personal")) -}}
 {{- fail "Laptop profile must be work or personal" -}}
 {{- end -}}
-{{- $defaultName := "snpefk" -}}
-{{- $defaultEmail := "snpefk@gmail.com" -}}
-{{- if eq $profile "work" -}}
-{{- $defaultName = "Fedor Tolstonozhenko" -}}
-{{- $defaultEmail = "" -}}
-{{- end -}}
-{{- $gitName := promptStringOnce . "gitName" "Git author name" $defaultName -}}
-{{- $gitEmail := promptStringOnce . "gitEmail" "Git author email" $defaultEmail -}}
+{{- $gitName := promptStringOnce . "gitName" "Git author name" "snpefk" -}}
+{{- $gitEmail := promptStringOnce . "gitEmail" "Git author email" "snpefk@gmail.com" -}}
 {{- if or (eq (trim $gitName) "") (eq (trim $gitEmail) "") -}}
 {{- fail "Git author name and email must not be empty" -}}
+{{- end -}}
+{{- $workGitName := "" -}}
+{{- $workGitEmail := "" -}}
+{{- if eq $profile "work" -}}
+{{- $workGitName = promptStringOnce . "workGitName" "Git author name for ~/code/mapbox" "Fedor Tolstonozhenko" -}}
+{{- $workGitEmail = promptStringOnce . "workGitEmail" "Git author email for ~/code/mapbox" "fedor.tolstonozhenko@mapbox.com" -}}
+{{- if or (eq (trim $workGitName) "") (eq (trim $workGitEmail) "") -}}
+{{- fail "Work Git author name and email must not be empty" -}}
+{{- end -}}
 {{- end -}}
 [data]
     profile = {{ $profile | quote }}
     gitName = {{ $gitName | quote }}
     gitEmail = {{ $gitEmail | quote }}
+{{- if eq $profile "work" }}
+    workGitName = {{ $workGitName | quote }}
+    workGitEmail = {{ $workGitEmail | quote }}
+{{- end }}

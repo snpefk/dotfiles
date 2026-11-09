@@ -1,0 +1,6 @@
+{{- if or (not (hasKey . "workGitName")) (not (hasKey . "workGitEmail")) -}}
+{{- fail "Set the work Git identity first: chezmoi --source \"$PWD\" init" -}}
+{{- end -}}
+[user]
+	name = {{ .workGitName | quote }}
+	email = {{ .workGitEmail | quote }}
