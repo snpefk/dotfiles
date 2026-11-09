@@ -21,6 +21,13 @@ AGENTS.md
 .gitconfig-mapbox
 {{ end }}
 
+# Machine-local opencode state and installed plugins.
+.config/opencode/node_modules
+.config/opencode/*.json.old
+.config/opencode/cli.json
+.config/opencode/service.json
+.config/opencode/opencode-notifier-state.json
+
 # macOS-only repository: do not apply its configuration on another OS.
 {{ if ne .chezmoi.os "darwin" }}
 **

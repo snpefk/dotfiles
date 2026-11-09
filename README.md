@@ -35,6 +35,8 @@ Never tracked; sourced or included if present:
 
 - `~/.config/secrets`, `~/.zshrc.local`, `~/.zshrc.<profile>.local`, `~/.zprofile.local`
 - `~/.gitconfig.local` (signing, `maintenance.repo`, delta themes)
+- `~/.config/opencode/opencode.json` (MCP servers, permissions, plugins, extra `instructions`);
+  only the general `AGENTS.md` is tracked
 
 ### Daily workflow
 
