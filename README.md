@@ -15,14 +15,26 @@ Install `chezmoi` first:
 From this repository root:
 
 ```bash
-./install
+./install          # preview the diff only
+./install --apply  # back up managed files, then apply
 ```
 
-This runs:
+The first run asks for the laptop profile (`work` or `personal`) and Git identity.
+The `work` profile also asks for the identity used under `~/code/mapbox/`, and adds
+`~/.config/zsh/work.zsh`, `~/.gitconfig-mapbox` and gh credential helpers.
+
+Packages are installed separately per profile:
 
 ```bash
-chezmoi init --apply --source "$(pwd)"
+brew bundle --file=./brewfiles/Brewfile.work --no-upgrade
 ```
+
+### Secrets and machine-local settings
+
+Never tracked; sourced or included if present:
+
+- `~/.config/secrets`, `~/.zshrc.local`, `~/.zshrc.<profile>.local`, `~/.zprofile.local`
+- `~/.gitconfig.local` (signing, `maintenance.repo`, delta themes)
 
 ### Daily workflow
 
@@ -54,9 +66,10 @@ chezmoi init --apply --source "$(pwd)"
 
 - `dot_config/*` -> `~/.config/*`
 - `Library/Application Support/iTerm2/DynamicProfiles/*.json` -> `~/Library/Application Support/iTerm2/DynamicProfiles/*.json`
-- `dot_zshrc` -> `~/.zshrc`
-- `dot_gitconfig` -> `~/.gitconfig`
-- `dot_code` -> `~/code/dotfiles`
+- `dot_zshrc.tmpl` -> `~/.zshrc`
+- `dot_gitconfig.tmpl` -> `~/.gitconfig`
+- `dot_gitconfig-mapbox.tmpl` -> `~/.gitconfig-mapbox` (work only)
+- `dot_gitmessage` -> `~/.gitmessage`
 
 ## iTerm2
 
