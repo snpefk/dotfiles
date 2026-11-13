@@ -15,7 +15,8 @@ unset plugin
 
 # Register before Oh My Zsh so synchronous and deferred vi-mode both work.
 _dotfiles_fzf_init() {
-  if (( $+commands[fzf] )); then
+  # zsh-vi-mode callbacks shadow the special `commands` hash with a local array.
+  if command -v fzf >/dev/null 2>&1; then
     source <(fzf --zsh)
   fi
 }

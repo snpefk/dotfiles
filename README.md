@@ -15,13 +15,23 @@ Install `chezmoi` first:
 From this repository root:
 
 ```bash
-./install          # preview the diff only
-./install --apply  # back up managed files, then apply
+chezmoi --source "$PWD" init
+./install
 ```
 
-The first run asks for the laptop profile (`work` or `personal`) and Git identity.
-The `work` profile also asks for the identity used under `~/code/mapbox/`, and adds
-`~/.config/zsh/work.zsh`, `~/.gitconfig-mapbox` and gh credential helpers.
+This selects your laptop profile and Git identity, then previews changes without
+applying them. After reviewing the preview:
+
+```bash
+./install --apply
+```
+
+The apply step backs up existing managed files first. The explicit source selects
+this checkout; it does not change chezmoi's default source directory.
+
+The laptop profile is `work` or `personal`. The `work` profile also asks for the
+identity used under `~/code/mapbox/`, and adds `~/.config/zsh/work.zsh`,
+`~/.gitconfig-mapbox` and gh credential helpers.
 
 Packages are installed separately per profile:
 
@@ -43,32 +53,44 @@ Never tracked; sourced or included if present:
 - Apply current source state:
 
   ```bash
-  chezmoi apply
+   chezmoi --source "$PWD" apply
   ```
 
 - Edit a target via chezmoi:
 
   ```bash
-  chezmoi edit ~/.zshrc
+   chezmoi --source "$PWD" edit ~/.zshrc
   ```
 
 - See pending changes:
 
   ```bash
-  chezmoi diff
+   chezmoi --source "$PWD" diff
   ```
 
 - Sync from target back to source state:
 
   ```bash
-  chezmoi re-add
+   chezmoi --source "$PWD" re-add
   ```
+
+Run these commands from this repository root.
+
+## Zsh verification
+
+```bash
+zsh -fi tests/zsh-fzf.zsh
+```
+
+This tests fzf bindings with deferred/synchronous vi-mode initialization and
+without vi-mode, including the callback's local `commands` array.
 
 ## Repository layout (chezmoi source state)
 
 - `dot_config/*` -> `~/.config/*`
 - `Library/Application Support/iTerm2/DynamicProfiles/*.json` -> `~/Library/Application Support/iTerm2/DynamicProfiles/*.json`
 - `dot_zshrc.tmpl` -> `~/.zshrc`
+- `dot_zprofile` -> `~/.zprofile`
 - `dot_gitconfig.tmpl` -> `~/.gitconfig`
 - `dot_gitconfig-mapbox.tmpl` -> `~/.gitconfig-mapbox` (work only)
 - `dot_gitmessage` -> `~/.gitmessage`
